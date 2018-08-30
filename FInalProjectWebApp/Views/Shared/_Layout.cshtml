@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+
+    @Styles.Render("~/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="icon" href="~/spartalogo.jpg" />
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>@ViewBag.Title - Engineering 12 Showcase</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="top"></div>
+    <!-- Start Header Area -->
+    <header class="default-header">
+        <div class="sticky-header">
+            <div class="container">
+                <div class="header-content d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#top" class="smooth logo"><!--<img src="img/spartalogo.jpg" alt="">--></a>
+                    </div>
+                    <div class="right-bar d-flex align-items-center">
+                        <nav class="d-flex align-items-center">
+                            <ul class="main-menu">
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("About", "About", "Home")</li>
+                                <li>@Html.ActionLink("Members", "Index", "Members")</li>
+
+                            </ul>
+                            <a href="#" class="mobile-btn"><span class="lnr lnr-menu"></span></a>
+                        </nav>
+                        <div class="search relative">
+                            <span class="lnr lnr-magnifier"></span>
+                            <form action="#" class="search-field">
+                                <input type="text" placeholder="Search here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search here'">
+                                <button class="search-submit"><span class="lnr lnr-magnifier"></span></button>
+                            </form>
+                        </div>
+                        <div class="header-social d-flex align-items-center">
+                            <!--<a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>-->
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Area -->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <footer class="section-full">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h6 class="text-white text-uppercase mb-20">About Engineering 12</h6>
+                                <p>
+                                    We are the 12th Engineering group graduating from Sparta Academy.
+                                    Our team includes 6 individuals from varied backrounds whose paths were joined to create a versatile and dynamic environment.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h6 class="text-white text-uppercase mb-20">Navigation Links</h6>
+                                <div class="d-flex">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">@Html.ActionLink("Members", "Index", "Members")</a></li>
+                                        <li><a href="#">@Html.ActionLink("Games", "Index", "Games")</a></li>
+                                        <li><a href="#">Project 1</a></li>
+                                        <li><a href="#">Final Project</a></li>
+                                    </ul>
+                                    <ul class="ml-30 footer-nav">
+                                        <li><a href="#">@Html.ActionLink("Skills", "Index", "Skills")</a></li>
+                                        <li><a href="#">Future</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="https://www.spartaglobal.com/">Sparta</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h6 class="text-white text-uppercase mb-20">Reactions</h6>
+                                <p>Connect with us. Post your reaction and comments on our time at the academy.</p>
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" novalidate action="" method="get" class="subscription relative d-flex justify-content-center">
+                                        <input type="text" name="Post" placeholder="Post" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Post'" required>
+                                        <div style="position: absolute; left: -5000px;">
+                                            <input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+                                        </div>
+                                        <button type="submit" class="newsletter-btn" name="subscribe"><span class="lnr lnr-location"></span></button>
+                                        <div class="info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-footer-widget">
+                                <h6 class="text-white text-uppercase mb-20">Instafeed</h6>
+                                <ul class="instafeed d-flex flex-wrap">
+                                    <li><img class="instafeed2" src="img/rsz_f1.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f2.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f3.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f4.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f5.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f6.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f7.jpg" alt=""></li>
+                                    <li><img class="instafeed2" src="img/rsz_f8.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom d-flex justify-content-between align-items-center">
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/js")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+            <script src="~/js/vendor/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="~/js/vendor/bootstrap.min.js"></script>
+            <script src="~/js/jquery.ajaxchimp.min.js"></script>
+            <script src="~/js/jquery.sticky.js"></script>
+            <script src="~/js/owl.carousel.min.js"></script>
+            <script src="~/js/mixitup.min.js"></script>
+            <script src="~/js/main.js"></script>
+            <p>&copy; @DateTime.Now.Year - Engineering 12 Showcase</p>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
